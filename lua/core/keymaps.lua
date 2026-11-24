@@ -21,6 +21,11 @@ end, { silent = true, desc = "UI: Alternar relativenumber" })
 keymap.set("v", "<", "<gv", { desc = "Indent: esquerda" })
 keymap.set("v", ">", ">gv", { desc = "Indent: direita" })
 
+-- Ctrl+I estilo Eclipse: corrige a indentação da linha/seleção
+-- (no Kitty o Neovim diferencia <C-i> de <Tab>; substitui o "avançar no jumplist")
+keymap.set("n", "<C-i>", "==", { desc = "Corrigir indentação da linha" })
+keymap.set("v", "<C-i>", "=gv", { desc = "Corrigir indentação da seleção" })
+
 -- Mover linhas/blocos com Alt+j / Alt+k
 keymap.set("n", "<A-j>", "<Cmd>m .+1<CR>==", { desc = "Mover linha p/ baixo" })
 keymap.set("n", "<A-k>", "<Cmd>m .-2<CR>==", { desc = "Mover linha p/ cima" })

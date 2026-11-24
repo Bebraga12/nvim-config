@@ -32,6 +32,7 @@ npm i -g @angular/cli @ionic/cli
 | Debug | nvim-dap + dap-ui: Java, Node/TS (js-debug), Angular/Ionic no Firefox |
 | Syntax | nvim-treesitter (inclui parser `angular` para templates) + folds |
 | HTML | emmet-vim, nvim-ts-autotag, nvim-autopairs |
+| Cores | mini.hipatterns: quadradinho ■ com a cor antes de `#hex`, `rgb()` e `rgba()` em CSS/SCSS/HTML/TS... (aproximado em 256 cores) |
 | Git | gitsigns, lazygit |
 | UI | nvim-tree, bufferline, lualine, telescope (+fzf, ui-select), which-key, trouble, todo-comments, indent-blankline, nvim-surround |
 
@@ -65,6 +66,7 @@ Leader = `Espaço`. Aperte `Espaço` e espere para ver todos (which-key).
 | `Ctrl+w` | Fechar buffer (substitui o prefixo de janelas — use `Ctrl+h/j/k/l`) |
 | `Ctrl+s` | Salvar |
 | `Alt+j/k` | Mover linha/bloco |
+| `Ctrl+i` | Corrigir indentação da linha/seleção (estilo Eclipse) |
 | `<C-e>,` | Expandir Emmet |
 
 ## Comandos
